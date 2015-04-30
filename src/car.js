@@ -1,4 +1,5 @@
 function Car(make, model, year, color){
+  this.year = year;
   
 }
 
