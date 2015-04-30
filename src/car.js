@@ -10,6 +10,9 @@ function Car(make, model, year, color){
 
 Car.prototype.sale = function(newOwner){
 	this.previousOwners.push(this.currentOwner);
+
+	//should update currentOwner with the new owner
+	this.currentOwner = newOwner;
 	
 
 
