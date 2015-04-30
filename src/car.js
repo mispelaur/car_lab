@@ -19,5 +19,12 @@ Car.prototype.paint = function(newColor){
 
 };
 
+Car.prototype.start = function(newStart){
+  this.start = "on";
+
+};
+
+
+
 
 module.exports=Car;

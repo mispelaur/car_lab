@@ -61,9 +61,9 @@ describe('Car', function(){
   });
 
   describe('#start', function(){
-    xit('should update the state to on', function(){
+    it('should update the state to on', function(){
       myCar.start();
-      expect(myCar.state).to.equal("on");
+      expect(myCar.start).to.equal("on");
     });
   });
 
