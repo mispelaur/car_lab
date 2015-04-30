@@ -41,11 +41,16 @@ Car.prototype.pickUp = function(passengers) {
 	
 }
 
+Car.prototype.dropOff = function(passengers) {
+	this.passengers.pop(passengers);
+}
 
-//t('should only modify passengers array if car is on', function(){
-      // myCar.off();
-      // myCar.pickUp("john");
-      // expect(myCar.passengers[0]).to.be.empty;
+//describe('#dropOff', function(){
+    // it('should remove passenger from the passengers array', function(){
+    //   myCar.start();
+    //   myCar.pickUp("john");
+    //   myCar.dropOff("john");
+    //   expect(myCar.passengers).to.be.empty;
 
 
 
