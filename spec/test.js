@@ -24,13 +24,13 @@ describe('Car', function(){
   });
 
   describe('#previousOwners', function(){
-    xit('should exist and initially be empty', function(){
+    it('should exist and initially be empty', function(){
       expect(myCar.previousOwners).to.exist.to.be.empty;
     });
   });
 
   describe('#currentOwner', function(){
-    xit('should initially be manufacturer', function(){
+    it('should initially be manufacturer', function(){
       expect(myCar.currentOwner).to.equal("Manufacturer");
     });
   });
