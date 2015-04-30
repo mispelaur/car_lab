@@ -1,5 +1,5 @@
 function Car(make, model, year, color){
-  
+  this.year = 2015;
 }
 
 Car.prototype.sale = function(newOwner){
