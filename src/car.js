@@ -16,6 +16,10 @@ Car.prototype.sale = function(newOwner){
 // this function should update currentOwner with the new Owner
 };
 
+Car.prototype.start = function(state){
+  this.state = "on";
+}
+
 Car.prototype.paint = function(newColor){
 
 };
