@@ -75,14 +75,14 @@ describe('Car', function(){
   });
 
   describe('#pickUp', function(){
-    xit('should add the passenger to the passengers array', function(){
-      // myCar.start();
+    it('should add the passenger to the passengers array', function(){
+      myCar.start();
       myCar.pickUp("john");
       expect(myCar.passengers[0]).to.equal("john");
     });
 
     it('should only modify passengers array if car is on', function(){
-      // myCar.off();
+      myCar.off();
       myCar.pickUp("john");
       expect(myCar.passengers[0]).to.be.empty;
     });
@@ -96,7 +96,7 @@ describe('Car', function(){
       expect(myCar.passengers).to.be.empty;
     });
 
-    xit('should leave passenger in the passengers array if car is off', function(){
+    it('should leave passenger in the passengers array if car is off', function(){
       myCar.start();
       myCar.pickUp("john");
       myCar.off();
