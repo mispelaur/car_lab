@@ -1,16 +1,12 @@
 
 
-function Car(make, model, year, color,state){
+function Car(make, model, year, color, state, passengers){
   this.year = year;
   this.state = "off";
   this.previousOwners = [];
   this.currentOwner = "Manufacturer";
-  this.passengers = "";
+  this.passengers = [];
 }
-
-
-
-
 
 Car.prototype.sale = function(newOwner){
 	this.previousOwners.push(this.currentOwner);
@@ -35,6 +31,17 @@ Car.prototype.off = function(state) {
 	//should update the state to off
 	this.state = "off";
 }
+
+Car.prototype.pickUp = function(passengers) {
+	this.passengers.push(passengers);
+
+}
+
+// it('should add the passenger to the passengers array', function(){
+//       myCar.start();
+//       myCar.pickUp("john");
+//       expect(myCar.passengers[0]).to.equal("john");
+
 
 
 module.exports=Car;
