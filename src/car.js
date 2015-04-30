@@ -3,6 +3,7 @@ function Car(make, model, year, color){
   this.state = "off";
   this.previousOwners = 0;
   this.currentOwner = "Manufacturer";
+  this.passengers = 0;
 }
 
 Car.prototype.sale = function(newOwner){
