@@ -30,5 +30,10 @@ Car.prototype.off = function(turnOff){
   this.state = "off";
 }
 
+Car.prototype.pickUp = function(carPool) {
+  this.passengers = ["john"];
+
+}
+
 
 module.exports=Car;
