@@ -30,7 +30,7 @@ describe('Car', function(){
   });
 
   describe('#currentOwner', function(){
-    xit('should initially be manufacturer', function(){
+    it('should initially be manufacturer', function(){
       expect(myCar.currentOwner).to.equal("Manufacturer");
     });
   });

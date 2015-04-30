@@ -9,6 +9,8 @@ Car.prototype.state = "off";
 
 Car.prototype.previousOwners = "";
 
+Car.prototype.currentOwner = "Manufacturer"
+
 Car.prototype.sale = function(newOwner){
 
 };
