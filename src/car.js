@@ -12,7 +12,8 @@ Car.prototype.passengers = '';
 
 Car.prototype.sale = function(newOwner){
   // append newOwner to previous
-
+  this.previousOwners.push(this.currentOwner);
+  this.currentOwner = newOwner;
 };
 
 Car.prototype.paint = function(newColor){
