@@ -33,14 +33,19 @@ Car.prototype.off = function(state) {
 }
 
 Car.prototype.pickUp = function(passengers) {
-	this.passengers.push(passengers);
-
+	if (this.state === "on") {
+		this.passengers.push(passengers);
+	} else {
+		this.passenger = [];
+	}
+	
 }
 
-// it('should add the passenger to the passengers array', function(){
-//       myCar.start();
-//       myCar.pickUp("john");
-//       expect(myCar.passengers[0]).to.equal("john");
+
+//t('should only modify passengers array if car is on', function(){
+      // myCar.off();
+      // myCar.pickUp("john");
+      // expect(myCar.passengers[0]).to.be.empty;
 
 
 
