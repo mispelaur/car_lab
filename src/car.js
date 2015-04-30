@@ -11,7 +11,6 @@ Car.prototype.currentOwner = 'Manufacturer';
 Car.prototype.passengers = [];
 
 Car.prototype.sale = function(newOwner){
-  // append newOwner to previous
   this.previousOwners.push(this.currentOwner);
   this.currentOwner = newOwner;
 };
@@ -22,6 +21,10 @@ Car.prototype.paint = function(newColor){
 
 Car.prototype.start = function() {
   this.state = 'on';
+}
+
+Car.prototype.off = function() {
+  this.state = 'off';
 }
 
 
