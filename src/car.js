@@ -43,14 +43,20 @@ Car.prototype.pickUp = function(passengers) {
 
 Car.prototype.dropOff = function(passengers) {
 	this.passengers.pop(passengers);
+	if (this.state === "off") {
+		this.passengers.push(passengers);
+} 
+
 }
 
-//describe('#dropOff', function(){
-    // it('should remove passenger from the passengers array', function(){
-    //   myCar.start();
-    //   myCar.pickUp("john");
-    //   myCar.dropOff("john");
-    //   expect(myCar.passengers).to.be.empty;
+
+
+// it('should leave passenger in the passengers array if car is off', function(){
+//       myCar.start();
+//       myCar.pickUp("john");
+//       myCar.off();
+//       myCar.dropOff("john");
+//       expect(myCar.passengers[0]).to.equal("john");
 
 
 
