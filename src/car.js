@@ -14,9 +14,8 @@ Car.prototype.currentOwner = "Manufacturer"
 Car.prototype.passengers = [];
 
 Car.prototype.sale = function(newOwner){
-
   this.previousOwners = ["Manufacturer"];
-  // Array.prototype.push(currentOwner, previousOwners)
+  this.currentOwner = ("Charlie");
 };
 
 Car.prototype.paint = function(newColor){
