@@ -4,8 +4,14 @@ function Car(make, model, year, color){
 
 Car.prototype.state = 'off';
 
-Car.prototype.sale = function(newOwner){
+Car.prototype.previousOwners = [];
 
+Car.prototype.currentOwner = 'Manufacturer';
+
+Car.prototype.passengers = '';
+
+Car.prototype.sale = function(newOwner){
+  // append newOwner to previous
 };
 
 Car.prototype.paint = function(newColor){
