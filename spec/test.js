@@ -89,7 +89,7 @@ describe('Car', function(){
   });
 
   describe('#dropOff', function(){
-    xit('should remove passenger from the passengers array', function(){
+    it('should remove passenger from the passengers array', function(){
       myCar.start();
       myCar.pickUp("john");
       myCar.dropOff("john");
