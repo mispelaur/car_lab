@@ -14,13 +14,12 @@ Car.prototype.sale = function(newOwner){
 	//should update currentOwner with the new owner
 	this.currentOwner = newOwner;
 	
-
-
-
 };
 
 Car.prototype.paint = function(newColor){
 
+	//should update the color of myCar
+  this.color = newColor;
 };
 
 
