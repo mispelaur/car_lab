@@ -21,16 +21,17 @@ Car.prototype.paint = function(newColor){
 
 Car.prototype.start = function() {
   this.state = 'on';
-}
+};
 
 Car.prototype.off = function() {
   this.state = 'off';
-}
+};
 
-Car.prototype.pickUp = function(passenger){
-  this.start();
-  this.passengers.push(passenger);
-}
+Car.prototype.pickUp = function(passenger) {
+  if (this.state === 'on') {
+    this.passengers.push(passenger);
+  };
+};
 
 
 module.exports=Car;
