@@ -11,6 +11,8 @@ Car.prototype.previousOwners = "";
 
 Car.prototype.currentOwner = "Manufacturer"
 
+Car.prototype.passengers = "";
+
 Car.prototype.sale = function(newOwner){
 
 };

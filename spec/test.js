@@ -36,7 +36,7 @@ describe('Car', function(){
   });
 
   describe('#passengers', function(){
-    xit('should exist and initially be empty', function(){
+    it('should exist and initially be empty', function(){
       expect(myCar.passengers).to.exist.to.be.empty;
     });
   });
