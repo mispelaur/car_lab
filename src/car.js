@@ -24,6 +24,10 @@ Car.prototype.start = function(newStart){
 
 };
 
+Car.prototype.off = function(newStartOff){
+  this.state = "off";
+
+};
 
 
 

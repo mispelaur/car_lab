@@ -68,14 +68,14 @@ describe('Car', function(){
   });
 
   describe('#off', function(){
-    xit('should update the state to off', function(){
+    it('should update the state to off', function(){
       myCar.off();
       expect(myCar.state).to.equal("off");
     });
   });
 
   describe('#pickUp', function(){
-    xit('should add the passenger to the passengers array', function(){
+    it('should add the passenger to the passengers array', function(){
       myCar.start();
       myCar.pickUp("john");
       expect(myCar.passengers[0]).to.equal("john");
