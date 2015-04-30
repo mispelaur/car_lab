@@ -6,7 +6,10 @@ function Car(make, model, year, color){
   this.passengers = 0;
 }
 
+
+
 Car.prototype.sale = function(newOwner){
+  this.previousOwners = ["Manufacturer"];
 
 
 };
