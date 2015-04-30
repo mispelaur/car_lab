@@ -18,7 +18,7 @@ describe('Car', function(){
   });
 
   describe('#state', function(){
-    xit('should initially be off', function(){
+    it('should initially be off', function(){
       expect(myCar.state).to.equal("off");
     });
   });
