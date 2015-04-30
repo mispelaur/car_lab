@@ -22,5 +22,9 @@ Car.prototype.paint = function(newColor){
   this.color = "Blue";
 };
 
+Car.prototype.start = function(newState){
+  this.state = "on";
+}
+
 
 module.exports=Car;
