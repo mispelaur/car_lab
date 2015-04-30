@@ -5,6 +5,9 @@ function Car(make, model, year, color){
   this.color = color; 
 }
 
+Car.prototype.state = "off";
+
+
 Car.prototype.sale = function(newOwner){
 
 };
