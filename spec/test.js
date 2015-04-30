@@ -54,7 +54,7 @@ describe('Car', function(){
   });
 
   describe('#paint', function(){
-    xit('should update the color of myCar', function(){
+    it('should update the color of myCar', function(){
       myCar.paint("Blue");
       expect(myCar.color).to.equal("Blue");
     });

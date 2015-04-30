@@ -5,6 +5,7 @@ function Car(make, model, year, color, state, previousOwners, currentOwner, pass
   this.currentOwner = "Manufacturer";
   this.passengers = '';
   this.newOwner = "Charlie";
+  this.color = "Blue";
 }
 
 Car.prototype.sale = function(newOwner){
