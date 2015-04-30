@@ -3,15 +3,12 @@ function Car(make, model, year, color){
   this.model = model;
   this.year = year;
   this.color = color; 
+
+  this.state = "off";
+  this.previousOwners = [];
+  this.currentOwner = "Manufacturer";
+  this.passengers = [];
 }
-
-Car.prototype.state = "off";
-
-Car.prototype.previousOwners = [];
-
-Car.prototype.currentOwner = "Manufacturer"
-
-Car.prototype.passengers = [];
 
 Car.prototype.sale = function(newOwner){
   this.previousOwners = ["Manufacturer"];
@@ -31,8 +28,11 @@ Car.prototype.off = function(turnOff){
 }
 
 Car.prototype.pickUp = function(carPool) {
-  this.passengers = ["john"];
-
+  if (this.state === "on") {
+    this.passengers = ["john"];
+  } else if (this.state === "off") {
+    this.passengers = [];
+  }; 
 }
 
 
