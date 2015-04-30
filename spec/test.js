@@ -75,7 +75,7 @@ describe('Car', function(){
   });
 
   describe('#pickUp', function(){
-    xit('should add the passenger to the passengers array', function(){
+    it('should add the passenger to the passengers array', function(){
       myCar.start();
       myCar.pickUp("john");
       expect(myCar.passengers[0]).to.equal("john");
