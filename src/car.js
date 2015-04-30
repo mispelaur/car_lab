@@ -12,10 +12,11 @@ Car.prototype.passengers = '';
 
 Car.prototype.sale = function(newOwner){
   // append newOwner to previous
+
 };
 
 Car.prototype.paint = function(newColor){
-
+  this.color = newColor;
 };
 
 
