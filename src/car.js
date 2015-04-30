@@ -8,7 +8,7 @@ Car.prototype.previousOwners = [];
 
 Car.prototype.currentOwner = 'Manufacturer';
 
-Car.prototype.passengers = '';
+Car.prototype.passengers = [];
 
 Car.prototype.sale = function(newOwner){
   // append newOwner to previous

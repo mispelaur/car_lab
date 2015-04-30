@@ -68,7 +68,7 @@ describe('Car', function(){
   });
 
   describe('#off', function(){
-    xit('should update the state to off', function(){
+    it('should update the state to off', function(){
       myCar.off();
       expect(myCar.state).to.equal("off");
     });
