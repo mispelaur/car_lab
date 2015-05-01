@@ -39,6 +39,11 @@ Car.prototype.dropOff = function(passenger) {
         this.passengers.splice(i, 1);
       }
     }
+// Alternative for going through an array when the array item is known:
+// 
+// var passengerIndex = this.passengers.indexOf(passengers);
+// this.passengers.splice(passengerIndex, 1);
+
   }
 } 
 
